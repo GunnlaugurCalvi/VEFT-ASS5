@@ -26,3 +26,17 @@ C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_6\week_06_assignment\API\bin\Debug
 C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_6\week_06_assignment\API\bin\Debug\netcoreapp2.0\Services.dll
 C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_6\week_06_assignment\API\bin\Debug\netcoreapp2.0\Models.pdb
 C:\Users\bjorgvinb\Desktop\vefthjonustur\vika_6\week_06_assignment\API\bin\Debug\netcoreapp2.0\Services.pdb
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\API.deps.json
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\API.runtimeconfig.json
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\API.runtimeconfig.dev.json
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\API.dll
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\API.pdb
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\Models.dll
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\Services.dll
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\Models.pdb
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\bin\Debug\netcoreapp2.0\Services.pdb
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\obj\Debug\netcoreapp2.0\API.csproj.CoreCompileInputs.cache
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\obj\Debug\netcoreapp2.0\API.AssemblyInfoInputs.cache
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\obj\Debug\netcoreapp2.0\API.AssemblyInfo.cs
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\obj\Debug\netcoreapp2.0\API.dll
+C:\Users\LAIART\Documents\HR\Vefþjónustur\verkefni5\VEFT-ASS5\API\obj\Debug\netcoreapp2.0\API.pdb

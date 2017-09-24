@@ -7583,7 +7583,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "ucA6yRANYCxb4osEjZTbReYq5N1ccLrwiFyKflJDn6t/GnetcNx6hNqG3Dr8lCPKBCN1M2bvzjnHJhgugChnMg==",
+      "sha512": "+HdfStb1gsTbtLzDiHuw+JPgQCfrSWddDZlHS/5Jr974BuNyiddjpF8BUUaCWBYDPrZiXfVAekXw0IMpZUKD6g==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -9873,7 +9873,7 @@
       ]
     },
     "System.Net.Security/4.3.0": {
-      "sha512": "IpHcd0taLNG0WbnVfM0POlmxypZjc3WF0qmdk2Yo5vdpBSGRs3IYWv62M/ZwiybLsE3LxBevkn1MfynDYqw6UQ==",
+      "sha512": "SJ9JohyG7pMm12cMy4wVxGYWjo54rr4Os4Q5qP5+4ue7CK7VABiimGXy2dfTaTJhBoAlriouaifeGjTIzWsCEQ==",
       "type": "package",
       "path": "system.net.security/4.3.0",
       "files": [
@@ -12570,23 +12570,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bjorgvinb\\.nuget\\packages\\": {},
+    "C:\\Users\\LAIART\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\bjorgvinb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\API\\obj\\",
+      "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\LAIART\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bjorgvinb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LAIART\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12599,11 +12599,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\Models\\Models.csproj"
+            "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj"
             },
-            "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\Services\\Services.csproj"
+            "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Services\\Services.csproj"
             }
           }
         }

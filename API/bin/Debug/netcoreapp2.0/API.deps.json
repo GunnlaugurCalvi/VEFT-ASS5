@@ -5152,7 +5152,7 @@
     "Remotion.Linq/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ucA6yRANYCxb4osEjZTbReYq5N1ccLrwiFyKflJDn6t/GnetcNx6hNqG3Dr8lCPKBCN1M2bvzjnHJhgugChnMg==",
+      "sha512": "sha512-+HdfStb1gsTbtLzDiHuw+JPgQCfrSWddDZlHS/5Jr974BuNyiddjpF8BUUaCWBYDPrZiXfVAekXw0IMpZUKD6g==",
       "path": "remotion.linq/2.1.1",
       "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
     },
@@ -5607,7 +5607,7 @@
     "System.Net.Security/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IpHcd0taLNG0WbnVfM0POlmxypZjc3WF0qmdk2Yo5vdpBSGRs3IYWv62M/ZwiybLsE3LxBevkn1MfynDYqw6UQ==",
+      "sha512": "sha512-SJ9JohyG7pMm12cMy4wVxGYWjo54rr4Os4Q5qP5+4ue7CK7VABiimGXy2dfTaTJhBoAlriouaifeGjTIzWsCEQ==",
       "path": "system.net.security/4.3.0",
       "hashPath": "system.net.security.4.3.0.nupkg.sha512"
     },

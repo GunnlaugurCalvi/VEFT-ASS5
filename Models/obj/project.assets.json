@@ -177,23 +177,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bjorgvinb\\.nuget\\packages\\": {},
+    "C:\\Users\\LAIART\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\Models\\Models.csproj",
-      "packagesPath": "C:\\Users\\bjorgvinb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bjorgvinb\\Desktop\\vefthjonustur\\vika_6\\week_06_assignment\\Models\\obj\\",
+      "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\LAIART\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bjorgvinb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LAIART\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
