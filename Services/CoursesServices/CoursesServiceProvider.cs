@@ -4,6 +4,7 @@ using CoursesAPI.Models;
 using CoursesAPI.Services.DataAccess;
 using CoursesAPI.Services.Exceptions;
 using CoursesAPI.Services.Models.Entities;
+using System;
 
 namespace CoursesAPI.Services.CoursesServices
 {
@@ -45,16 +46,23 @@ namespace CoursesAPI.Services.CoursesServices
         /// </summary>
         /// <param name="semester"></param>
         /// <returns></returns>
-        public List<CourseInstanceDTO> GetCourseInstancesBySemester(string semester = null, string lang = null)
+        public Envelope<CourseInstanceDTO> GetCourseInstancesBySemester(string semester = null, string lang = null, int pageNumber = 1)
         {
             if (string.IsNullOrEmpty(semester))
             {
                 semester = "20153";
             }
 
+            var pageSize = 2;
+            var allCourses = (from c in _courseInstances.All()
+                                join ct in _courseTemplates.All() on c.CourseID equals ct.CourseID
+                                where c.SemesterID == semester
+                                select c).ToList();
+            var maxPages = (int)Math.Ceiling(allCourses.Count / (double)pageSize);
+
             if(lang == "en-US, en; q=0.8, is; q=0.6")
             {
-                var courses = (from c in _courseInstances.All()
+                var Items = (from c in _courseInstances.All()
                             join ct in _courseTemplates.All() on c.CourseID equals ct.CourseID
                             where c.SemesterID == semester
                             select new CourseInstanceDTO
@@ -62,22 +70,37 @@ namespace CoursesAPI.Services.CoursesServices
                                 Name = ct.Name_EN   ,
                                 TemplateID = ct.CourseID,
                                 CourseInstanceID = c.ID,
-                                MainTeacher = "" // Hint: it should not always return an empty string!
-                            }).ToList();
-                return courses;
+                                MainTeacher = ""
+                            }).Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
+                return new Envelope<CourseInstanceDTO> 
+                {
+                    Items = Items,
+                    TotalPages = maxPages,
+                    PageSize = pageSize,
+                    CurrentPage = pageNumber,
+                    TotalItems = allCourses.Count
+                };
             }else
             {
-                var courses = (from c in _courseInstances.All()
+                var Items = (from c in _courseInstances.All()
                             join ct in _courseTemplates.All() on c.CourseID equals ct.CourseID
                             where c.SemesterID == semester
                             select new CourseInstanceDTO
                             {
-                                Name = ct.Name,
+                                Name = ct.Name_EN   ,
                                 TemplateID = ct.CourseID,
                                 CourseInstanceID = c.ID,
-                                MainTeacher = GetMainTeacher(c.ID)
-                            }).ToList();
-                    return courses;
+                                MainTeacher = ""
+                            }).Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
+                return new Envelope<CourseInstanceDTO> 
+                {
+                    Items = Items,
+                    TotalPages = maxPages,
+                    PageSize = pageSize,
+                    CurrentPage = pageNumber
+                };
             }
         }
 

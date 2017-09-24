@@ -20,16 +20,21 @@ namespace WebApplication.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetCoursesBySemester(string semester = null)
+        public IActionResult GetCoursesBySemester([FromQuery]string semester = null,[FromQuery] int pageNumber = 1)
         {
             // TODO: figure out the requested language (if any!)
             // and pass it to the service provider!
 
             string languageHeader = Request.Headers["Accept-Language"];
 
-            System.Diagnostics.Debug.WriteLine(languageHeader);
+            var retVal = _service.GetCourseInstancesBySemester(semester, languageHeader, pageNumber);
 
-            return Ok(_service.GetCourseInstancesBySemester(semester, languageHeader));
+            if(pageNumber > retVal.TotalPages || pageNumber < 0)
+            {
+                return NotFound("Not found"); // 404
+            }
+
+            return Ok(retVal);
         }
 
         /// <summary>
