@@ -75,10 +75,26 @@ namespace CoursesAPI.Services.CoursesServices
                                 Name = ct.Name,
                                 TemplateID = ct.CourseID,
                                 CourseInstanceID = c.ID,
-                                MainTeacher = "" // Hint: it should not always return an empty string!
+                                MainTeacher = GetMainTeacher(c.ID)
                             }).ToList();
                     return courses;
             }
+        }
+
+        /// <summary>
+		/// Retrieves the name of the main teacher for a specified course
+		/// </summary>
+		/// <param name="CourseInstanceID"></param>
+		/// <returns>string MainTeacherName</returns>
+		private string GetMainTeacher(int CourseInstanceID)
+        {
+            string MainTeacherName = (from t in _teacherRegistrations.All()
+									join p in _persons.All() on t.SSN equals p.SSN
+                                    where t.CourseInstanceID == CourseInstanceID
+                                         && t.Type == TeacherType.MainTeacher
+                                    select p.Name).SingleOrDefault() ?? "";
+
+			return MainTeacherName;
         }
     }
 }
