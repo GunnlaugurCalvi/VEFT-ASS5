@@ -45,25 +45,40 @@ namespace CoursesAPI.Services.CoursesServices
         /// </summary>
         /// <param name="semester"></param>
         /// <returns></returns>
-        public List<CourseInstanceDTO> GetCourseInstancesBySemester(string semester = null)
+        public List<CourseInstanceDTO> GetCourseInstancesBySemester(string semester = null, string lang = null)
         {
             if (string.IsNullOrEmpty(semester))
             {
                 semester = "20153";
             }
 
-            var courses = (from c in _courseInstances.All()
-                           join ct in _courseTemplates.All() on c.CourseID equals ct.CourseID
-                           where c.SemesterID == semester
-                           select new CourseInstanceDTO
-                           {
-                               Name = ct.Name_EN,
-                               TemplateID = ct.CourseID,
-                               CourseInstanceID = c.ID,
-                               MainTeacher = "" // Hint: it should not always return an empty string!
-                           }).ToList();
-
-            return courses;
+            if(lang == "en-US, en; q=0.8, is; q=0.6")
+            {
+                var courses = (from c in _courseInstances.All()
+                            join ct in _courseTemplates.All() on c.CourseID equals ct.CourseID
+                            where c.SemesterID == semester
+                            select new CourseInstanceDTO
+                            {
+                                Name = ct.Name_EN,
+                                TemplateID = ct.CourseID,
+                                CourseInstanceID = c.ID,
+                                MainTeacher = "" // Hint: it should not always return an empty string!
+                            }).ToList();
+                return courses;
+            }else
+            {
+                var courses = (from c in _courseInstances.All()
+                            join ct in _courseTemplates.All() on c.CourseID equals ct.CourseID
+                            where c.SemesterID == semester
+                            select new CourseInstanceDTO
+                            {
+                                Name = ct.Name,
+                                TemplateID = ct.CourseID,
+                                CourseInstanceID = c.ID,
+                                MainTeacher = "" // Hint: it should not always return an empty string!
+                            }).ToList();
+                    return courses;
+            }
         }
     }
 }

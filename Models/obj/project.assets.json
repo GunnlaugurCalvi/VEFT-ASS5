@@ -183,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj",
+      "projectUniqueName": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj",
+      "projectPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\LAIART\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\obj\\",
+      "outputPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
