@@ -28,5 +28,15 @@ namespace CoursesAPI.Services.Models.Entities
 		/// A short description of the course.
 		/// </summary>
 		public string Description { get; set; }
+
+		/// <summary>
+		/// The name of the course. Example: "Vefþjónustur".
+		/// </summary>
+		public string Name_EN        { get; set; }
+
+		/// <summary>
+		/// A short description of the course.
+		/// </summary>
+		public string Description_EN { get; set; }
 	}
 }

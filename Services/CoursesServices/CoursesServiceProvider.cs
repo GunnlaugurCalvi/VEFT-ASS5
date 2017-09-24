@@ -52,16 +52,12 @@ namespace CoursesAPI.Services.CoursesServices
                 semester = "20153";
             }
 
-            var course = (from c in )
-
-
-
             var courses = (from c in _courseInstances.All()
                            join ct in _courseTemplates.All() on c.CourseID equals ct.CourseID
                            where c.SemesterID == semester
                            select new CourseInstanceDTO
                            {
-                               Name = ct.Name,
+                               Name = ct.Name_EN,
                                TemplateID = ct.CourseID,
                                CourseInstanceID = c.ID,
                                MainTeacher = "" // Hint: it should not always return an empty string!
