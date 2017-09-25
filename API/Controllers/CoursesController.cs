@@ -33,6 +33,9 @@ namespace WebApplication.Controllers
             {
                 return NotFound("Not found"); // 404
             }
+            if(retVal == null){
+                return StatusCode(500);
+            }
 
             return Ok(retVal);
         }

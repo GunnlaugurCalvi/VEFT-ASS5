@@ -3068,7 +3068,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "+HdfStb1gsTbtLzDiHuw+JPgQCfrSWddDZlHS/5Jr974BuNyiddjpF8BUUaCWBYDPrZiXfVAekXw0IMpZUKD6g==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -6515,23 +6515,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LAIART\\.nuget\\packages\\": {},
+    "C:\\Users\\gulli\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Tests\\Tests.csproj",
+      "projectUniqueName": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS5\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\LAIART\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Tests\\obj\\",
+      "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS5\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\gulli\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS5\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\LAIART\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gulli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6544,11 +6544,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Services\\Services.csproj": {
-              "projectPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Services\\Services.csproj"
+            "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS5\\Services\\Services.csproj": {
+              "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS5\\Services\\Services.csproj"
             },
-            "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj": {
-              "projectPath": "c:\\Users\\LAIART\\Documents\\HR\\Vefþjónustur\\verkefni5\\VEFT-ASS5\\Models\\Models.csproj"
+            "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS5\\Models\\Models.csproj": {
+              "projectPath": "c:\\Users\\gulli\\Documents\\Vefthjonustur\\VEFT-ASS5\\Models\\Models.csproj"
             }
           }
         }

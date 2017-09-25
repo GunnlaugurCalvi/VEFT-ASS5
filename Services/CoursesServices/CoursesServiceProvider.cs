@@ -72,6 +72,7 @@ namespace CoursesAPI.Services.CoursesServices
                                 CourseInstanceID = c.ID,
                                 MainTeacher = ""
                             }).Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+                            
 
                 return new Envelope<CourseInstanceDTO> 
                 {
@@ -88,7 +89,7 @@ namespace CoursesAPI.Services.CoursesServices
                             where c.SemesterID == semester
                             select new CourseInstanceDTO
                             {
-                                Name = ct.Name_EN   ,
+                                Name = ct.Name,
                                 TemplateID = ct.CourseID,
                                 CourseInstanceID = c.ID,
                                 MainTeacher = ""
@@ -99,25 +100,10 @@ namespace CoursesAPI.Services.CoursesServices
                     Items = Items,
                     TotalPages = maxPages,
                     PageSize = pageSize,
-                    CurrentPage = pageNumber
+                    CurrentPage = pageNumber,
+                    TotalItems = allCourses.Count
                 };
             }
-        }
-
-        /// <summary>
-		/// Retrieves the name of the main teacher for a specified course
-		/// </summary>
-		/// <param name="CourseInstanceID"></param>
-		/// <returns>string MainTeacherName</returns>
-		private string GetMainTeacher(int CourseInstanceID)
-        {
-            string MainTeacherName = (from t in _teacherRegistrations.All()
-									join p in _persons.All() on t.SSN equals p.SSN
-                                    where t.CourseInstanceID == CourseInstanceID
-                                         && t.Type == TeacherType.MainTeacher
-                                    select p.Name).SingleOrDefault() ?? "";
-
-			return MainTeacherName;
         }
     }
 }
